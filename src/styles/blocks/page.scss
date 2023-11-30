@@ -18,4 +18,10 @@
       margin-bottom: 170px;
     }
   }
+
+  &__body {
+    &--menu-opened {
+      overflow: hidden;
+    }
+  }
 }

@@ -8,6 +8,10 @@
   }
 
   &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     @include onTablet {
       margin-bottom: 130px;
     }
@@ -17,81 +21,22 @@
     }
   }
 
-  &__logo {
-    @include onTablet {
-      grid-column: 1 / 6;
-      align-self: center;
-    }
-
-    @include onDesktop {
-      grid-column: 1 / 10;
-    }
-  }
-
-  &__logo-image {
-    display: block;
-  }
-
-  &__links {
-    display: none;
-
-    @include onTablet {
-      position: relative;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      grid-column: 6 / -1;
-
-      font-size: 14px;
-      line-height: 20px;
-    }
-
-    @include onDesktop {
-      grid-column: 10 / -1;
-    }
-  }
-
-  &__link {
-    @include linkUnderline;
-
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #4f4f4f;
-
-    &--locale {
-      color: $gray;
-    }
-
-    &--active {
-      color: $black;
-    }
-  }
-
-  &__button {
+  &__actions-wrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 102px;
-    height: 48px;
+    column-gap: 30px;
+  }
 
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
-    color: #fff;
+  &__menu-opener {
+    width: 32px;
+    height: 32px;
 
-    background-color: $black;
+    background-image: url(../images/icons/burger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 
-    transition: background-color $duration;
-
-    &:hover {
-      background-color: #131313;
-    }
-
-    &:disabled {
-      background-color: #d0d0d0;
+    @include onDesktop {
+      display: none;
     }
   }
 

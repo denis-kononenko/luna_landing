@@ -1,0 +1,47 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 2;
+
+  box-sizing: border-box;
+  padding-bottom: 30px;
+
+  background-color: $backgroundColor;
+
+  transform: translateX(-100%);
+
+  transition: transform $duration;
+
+  &--open {
+    transform: translateX(0);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    margin-bottom: 40px;
+  }
+
+  &__cross {
+    width: 24px;
+    height: 24px;
+
+    background-image: url(../images/icons/cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__nav {
+    margin-bottom: 50px;
+  }
+}

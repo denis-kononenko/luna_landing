@@ -12,4 +12,10 @@
   @include onDesktop {
     padding: 0 43px;
   }
+
+  &--menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }

@@ -1,29 +1,6 @@
 .advantages {
   &__nav {
-    display: none;
-
-    @include onDesktop {
-      display: block;
-      margin-bottom: 92px;
-    }
-  }
-
-  &__list {
-    display: flex;
-    justify-content: center;
-    column-gap: 84px;
-
-    list-style-type: none;
-  }
-
-  &__link {
-    @include linkUnderline;
-
-    text-decoration: none;
-    color: inherit;
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: uppercase;
+    margin-bottom: 92px;
   }
 
   &__image-wrapper {
